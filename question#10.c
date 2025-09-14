@@ -6,6 +6,7 @@ int main(void) {
     int crust;
     float price= 0;
     char cheese;
+    char garlic_bread;
     int time;
     char student;
     int delivery;
@@ -83,6 +84,7 @@ int main(void) {
     printf("Your final price is %.2f$\n", price);
 
     if (quantity == 3 && crust == 3) {
+        char garlic_bread = 'Y';
         printf("You get free garlic bread!\n");
     }
 
@@ -95,14 +97,16 @@ int main(void) {
 
     // RECEIPT
     printf("=========RECEIPT=========\n");
-    printf("Pizza Size:      %d\n",size);
-    printf("Pizza Quantity:  %d\n",quantity);
-    printf("Pizza Cheese:    %c\n",cheese);
-    printf("Pizza Time:      %d(Hrs)\n",time);
-    printf("Pizza Delivery:  %d\n",delivery);
-    printf("Student:         %c\n",student);
-    printf("Total Price:     %.2f$\n",price);
+    printf("Pizza Size:        %d\n",size);
+    printf("Pizza Quantity:    %d\n",quantity);
+    printf("Pizza Cheese:      %c\n",cheese);
+    printf("Free Garlic bread: %c\n",garlic_bread);
+    printf("Pizza Time:        %d(Hrs)\n",time);
+    printf("Pizza Delivery:    %d\n",delivery);
+    printf("Student:           %c\n",student);
+    printf("Total Price:       %.2f$\n",price);
 
     return 0;
 }
+
 
