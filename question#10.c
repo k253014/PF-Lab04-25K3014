@@ -6,7 +6,7 @@ int main(void) {
     int crust;
     float price= 0;
     char cheese;
-    char garlic_bread;
+    char garlic_bread = 'N';
     int time;
     char student;
     int delivery;
@@ -83,8 +83,8 @@ int main(void) {
     }
     printf("Your final price is %.2f$\n", price);
 
-    if (quantity == 3 && crust == 3) {
-        char garlic_bread = 'Y';
+    if (quantity >= 3 && crust == 3) {
+        garlic_bread = 'Y';
         printf("You get free garlic bread!\n");
     }
 
@@ -108,5 +108,4 @@ int main(void) {
 
     return 0;
 }
-
 
